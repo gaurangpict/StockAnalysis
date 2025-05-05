@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #121212;
+    color: #f8f9fa;
+}
+
+.container {
+    flex: 1;
+}
+
+/* Prevent white flashing during chart redraws */
+.tab-pane, .card, .card-body {
+    background-color: #1e1e1e !important;
+}
+
+/* Fix for chart container consistency */
+.chart-container {
+    position: relative;
+    background-color: #1e1e1e;
+}
+
+/* Card and Table Styles */
+.card {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* Form Styles */
+.form-control:focus, .form-select:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Info Item Styles */
+.info-item {
+    margin-bottom: 0.5rem;
+}
+
+/* Chart Styles */
+canvas {
+    width: 100% !important;
+    background-color: #1e1e1e !important;
+}
+
+/* Recommendation Card Styles */
+#recommendationCard.bg-success {
+    background-color: var(--bs-success) !important;
+}
+
+#recommendationCard.bg-warning {
+    background-color: var(--bs-warning) !important;
+}
+
+#recommendationCard.bg-danger {
+    background-color: var(--bs-danger) !important;
+}
+
+#recommendationCard.bg-info {
+    background-color: var(--bs-info) !important;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: var(--bs-dark);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 1.25rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .display-1 {
+        font-size: 3rem;
+    }
+}
+
+/* Badge Colors */
+.badge.trend-up {
+    background-color: var(--bs-success);
+}
+
+.badge.trend-down {
+    background-color: var(--bs-danger);
+}
+
+.badge.trend-neutral {
+    background-color: var(--bs-info);
+}
+
+/* Animations */
+.spinner-border {
+    animation-duration: 0.8s;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#resultsSection {
+    animation: fadeIn 0.5s ease-in;
+}
